@@ -6,7 +6,7 @@
 }
 body {
  font-family: Arial, sans-serif;
- background-color: #f5f5f5;
+ background-color: #838080;
  color: #333;
  line-height: 1.6;
 }
@@ -70,7 +70,7 @@ h3 {
  margin-top: 30px;
 }
 article {
- padding: 15px 0;
+ padding: 10px 0;
  border-bottom: 1px solid #ddd;
 }
 article:last-child {
@@ -146,4 +146,241 @@ hr {
  section {
  padding: 20px;
  }
+}
+
+/* ==========================
+   CSS KHUSUS PROJECT
+   ========================== */
+
+/* Latar belakang halaman project */
+.body-project {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* Header halaman project */
+.body-project header {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Judul PROJECT */
+.body-project header h1 {
+    margin: 0 0 20px;
+    color: #f59e0b;
+}
+
+/* Navigasi */
+.body-project nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* Link navigasi */
+.body-project nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Efek saat mouse diarahkan ke navigasi */
+.body-project nav a:hover {
+    color: #f59e0b;
+}
+
+/* Bagian daftar project */
+.body-project section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Kartu project */
+.body-project article {
+    background-color: white;
+    padding: 25px;
+    flex: 1 1 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #f59e0b;
+}
+
+/* Judul setiap project */
+.body-project article h3 {
+    color: #1f2937;
+    margin-top: 0;
+}
+
+/* Deskripsi project */
+.body-project article p {
+    line-height: 1.6;
+}
+
+/* Tombol View Project */
+.body-project article a {
+    display: inline-block;
+    background-color: #f59e0b;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Efek hover tombol */
+.body-project article a:hover {
+    background-color: #d97706;
+}
+
+
+/* =====================================
+   CSS KHUSUS HALAMAN RESUME
+   ===================================== */
+
+/* Pengaturan dasar halaman resume */
+.body-resume {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header resume */
+.body-resume header {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+/* Nama pada bagian atas */
+.body-resume header h1 {
+    color: #f0b429;
+    text-transform: uppercase;
+    margin: 15px 0;
+}
+
+/* Garis horizontal */
+.body-resume header hr {
+    border: 0;
+    border-top: 1px solid #61778b;
+    margin: 15px 0;
+}
+
+/* Deskripsi profesi */
+.body-resume header p {
+    margin: 10px 0 20px;
+}
+
+/* Navigasi utama dan navigasi resume */
+.body-resume nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.body-resume header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.body-resume header nav a:hover {
+    color: #f0b429;
+}
+
+/* Navigasi About, Skills, Experience, dan lainnya */
+.body-resume header nav a[href^="#"] {
+    display: inline-block;
+    margin: 5px 8px;
+}
+
+/* Konten utama resume */
+.body-resume main {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Setiap bagian resume */
+.body-resume main section {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 5px solid #f0b429;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+    scroll-margin-top: 20px;
+}
+
+/* Judul bagian */
+.body-resume main section h2 {
+    color: #17324d;
+    margin-top: 0;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 8px;
+}
+
+/* Judul pengalaman dan pendidikan */
+.body-resume main article h3 {
+    color: #2563a6;
+    margin-bottom: 5px;
+}
+
+/* Daftar keahlian */
+.body-resume #skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+.body-resume #skills li {
+    background-color: #e8f1fa;
+    color: #17324d;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+/* Footer */
+.body-resume footer {
+    background-color: #17324d;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* Tampilan untuk layar HP */
+@media (max-width: 600px) {
+    .body-resume header nav ul {
+        gap: 12px;
+    }
+
+    .body-resume main {
+        padding: 0 12px;
+    }
+
+    .body-resume main section {
+        padding: 18px;
+    }
 }
